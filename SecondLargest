@@ -1,0 +1,18 @@
+package day10;
+import java.util.Arrays;
+
+interface B1
+{
+	void second(int []a );
+}
+public class SecondLargest {
+
+	public static void main(String[] args) {
+		int array[] = { 11, 29, 31, 45, 5 };
+		B1 s1=(int [] a)->{		
+		Arrays.sort(array);
+		System.out.println("second highest number is = " +array[array.length-2]);};
+		s1.second(array);
+	}
+
+}
