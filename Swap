@@ -1,0 +1,21 @@
+package day10;
+interface B {
+
+	// abstract method
+	void swap(int x, int y);
+}
+public class Swap {
+	static int x = 10;
+	static int y = 20;
+	public static void main(String[] args) {
+		B s = (int x, int y) -> {
+			System.out.println("before swapping x=" + x + ",y=" + y);
+			int temp;
+			temp = x;
+			x = y;
+			y = temp;
+			System.out.println("after swapping x=" + x + ",y=" + y);
+		};
+		s.swap(10, 20);
+	}
+}
